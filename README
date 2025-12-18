@@ -1,0 +1,9 @@
+1. To make use the code one must first prepare the amplitude spectra of Signal and noise for the required phase spectrum (such as Lg, Pg, Sn) and save them by the name: <EVENT>.<STATION>.ASC (or any other format) the files should include 4 columns: frequency | signal | noise | signal / noise. this can be accomplised using python Matlab or anyother software. Extract the values of <Station> <EVENT> <f1> <f2> and save in info_twostn.dat.
+
+2. Next Run the code "makepair.sh" to make the Two Station and one event pairs. Extract the values of station pairs like <eventid> <sta1> <sta2> and save in info_makespect.dat
+
+3. Run run_twostn.sh
+
+4. Run run_makespec.sh
+
+5. For the Tomography run the code LSQR.m in Matlab.
